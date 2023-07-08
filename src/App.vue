@@ -1,11 +1,11 @@
 <template>
-  <div class="wrapper w-full">
+  <!-- <div class="wrapper w-full">
     <div>
       <Header />
       <main class="view">
         <div class="container">
           <h2 class="mb-10 font-bold text-4xl text-white" @changingTitle="updateTitles">
-            Список проектов, за которыми слежу
+            Добавить новость
           </h2>
           <Form @onSubmit="handleSubmit" />
           <List :items="items" @removeItem="onRemoveItem" @showItem="onShowItem" />
@@ -13,10 +13,12 @@
       </main>
     </div>
     <Footer />
-  </div>
+  </div> -->
+  <RouterView />
 </template>
 
 <script>
+// import VueRouter from 'vue-router';
 import Form from '@/components/Form.vue';
 import List from '@/components/List.vue';
 import Header from '@/components/Header.vue';
